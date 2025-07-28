@@ -2,7 +2,6 @@ import os
 import json
 from utils import calculate_diff_genes, sub_clustering, calculate_within_group_markers
 import scanpy as sc
-from AnnoSingle import AnnoSingle
 from AnnoCross import AnnCross_subcluster, refine_grouped_cluster_idx_dict
 
 

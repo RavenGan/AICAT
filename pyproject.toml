@@ -3,10 +3,11 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example_package_RavenGan"
+name = "aicat"
 version = "0.0.1"
 authors = [
-  { name="Dailin Gan", email="dailin.raven.gan@gmail.com" }
+  { name="Dailin Gan", email="dailin.raven.gan@gmail.com" },
+  { name="Jun Li", email="jun.li@nd.edu" }
 ]
 description = "A small example package"
 readme = "README.md"

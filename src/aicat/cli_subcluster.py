@@ -26,3 +26,6 @@ def main():
                           key_added=args.key_added,
                           resolution=args.resolution,
                           anno_level=args.anno_level)
+
+if __name__ == "__main__":
+    main()

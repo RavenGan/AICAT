@@ -4,8 +4,11 @@
 .Python
 db.sqlite3
 .DS_Store
+.env
 
 dist/
 build/
 venv/
+tests/data/
+tests/res/
 __pycache__/

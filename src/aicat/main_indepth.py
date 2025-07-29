@@ -4,7 +4,6 @@ from .AnnoGroup import AnnoGroup
 from .AnnoCross import AnnCross, refine_grouped_cluster_idx_dict
 
 import os
-import argparse
 import scanpy as sc
 
 def indepth_annotation(openai_api_key, 

@@ -20,3 +20,6 @@ def main():
                        args.cluster_col_name,
                        data_name=args.data_name,
                        save_path=args.save_path)
+
+if __name__ == "__main__":
+    main()

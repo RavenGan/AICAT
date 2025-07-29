@@ -21,3 +21,7 @@ license-files = ["LICEN[CS]E*"]
 [project.urls]
 Homepage = "https://github.com/RavenGan/AICAT"
 Issues = "https://github.com/RavenGan/AICAT/issues"
+
+[project.scripts]
+aicat-indepth = "aicat.cli_indepth:main"
+aicat-subcluster = "aicat.cli_subcluster:main"

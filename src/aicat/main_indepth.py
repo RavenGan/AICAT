@@ -101,34 +101,3 @@ def indepth_annotation(openai_api_key,
         refine_group_dict = refine_grouped_cluster_idx_dict(refine_cross_group_dict)
         AnnoRound += 1
 
-
-
-
-
-
-
-# os.chdir("/Users/david/Desktop/CelltypeAgenticAI")
-os.chdir("/afs/crc.nd.edu/group/StatDataMine/dm008/Dailin_Gan/CelltypeAgenticAI")
-
-# Parse command line arguments
-parser = argparse.ArgumentParser()
-parser.add_argument("--tissue", type=str, help="A chosen tissue from the data MCA")
-args = parser.parse_args()
-
-tissue = args.tissue
-
-# set up the OpenAI API key CONFIDENTIAL
-openai_api_key = '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'
-species = "mouse"
-
-cell_type_col = 'Annotation'
-res_save_path = f"./res/2025_0708_MCA/{tissue}"
-
-# Check if the directory exists, if not, create it
-if not os.path.exists(res_save_path):
-    os.makedirs(res_save_path)
-
-# load the preprocessed data
-data_path = f"./data/MCA_mouse/processed_SingleBatch/{tissue}_processed.h5ad"
-adata = sc.read_h5ad(data_path)
-

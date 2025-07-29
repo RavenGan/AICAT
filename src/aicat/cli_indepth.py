@@ -1,5 +1,4 @@
 import argparse
-import scanpy as sc
 from .main_indepth import indepth_annotation
 
 def main():
@@ -14,10 +13,8 @@ def main():
 
     args = parser.parse_args()
 
-    adata = sc.read(args.adata_path)
-
     indepth_annotation(args.openai_api_key,
-                       adata,
+                       args.adata_path,
                        args.species,
                        args.tissue,
                        args.cluster_col_name,

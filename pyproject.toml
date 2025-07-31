@@ -4,20 +4,42 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aicat"
-version = "0.0.1"
+version = "0.0.4"
 authors = [
   { name="Dailin Gan", email="dailin.raven.gan@gmail.com" },
   { name="Jun Li", email="jun.li@nd.edu" }
 ]
-description = "A small example package"
+description = "Agentic-AI Cell-type Annotation Tool"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "langchain >= 0.3.21",
+    "langchain-core >= 0.3.45",
+    "langchain-openai >= 0.3.9",
+    "pydantic >= 2.10.6",
+    "pydantic-settings >= 2.2.1",
+    "scanpy >= 1.11.0",
+    "python-dotenv >=1.0.1",
+    "pandas >= 2.2.3",
+    "argparse",
+    "requests<2.32",
+    "urllib3<2.1",
+    "charset-normalizer<3"
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort"
+]
 
 [project.urls]
 Homepage = "https://github.com/RavenGan/AICAT"

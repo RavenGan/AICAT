@@ -213,7 +213,7 @@ class CellTypeAgent:
     def parse_output(self, response):
         output = response["output"]
         json_str = self._extract_json_from_response(output)
-        parsed_res = self.ResponseFormat.parse_raw(json_str)
+        parsed_res = self.ResponseFormat.model_validate_json(json_str)
         return parsed_res
     
     def _extract_json_from_response(self, response_text):

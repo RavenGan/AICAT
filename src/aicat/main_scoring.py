@@ -17,7 +17,7 @@ parser.add_argument("--save_path_root", type=str, required=True)
 args = parser.parse_args()
 
 # set up the OpenAI API key CONFIDENTIAL
-openai_api_key = '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'
+openai_api_key = "OpenAI_API_Key_Confidential"
 
 tissue = args.tissue
 save_path_root = args.save_path_root

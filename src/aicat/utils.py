@@ -46,7 +46,9 @@ def sub_clustering(data_hvg, cell_type_col, cluster_idx,
     sc.pp.pca(data_sub)
     sc.pp.neighbors(data_sub)
     sc.tl.umap(data_sub) # Do UMAP incase of visualization
-    sc.tl.leiden(data_sub, key_added=key_added, resolution=resolution)
+    sc.tl.leiden(data_sub, key_added=key_added, resolution=resolution,
+                 flavor="igraph",
+                 directed=False)  # Use igraph for Leiden clustering
 
     return data_sub
 

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aicat"
-version = "0.0.5"
+version = "0.0.6"
 authors = [
   { name="Dailin Gan", email="dailin.raven.gan@gmail.com" },
   { name="Jun Li", email="jun.li@nd.edu" }

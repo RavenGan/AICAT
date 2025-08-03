@@ -1,5 +1,10 @@
 # AICAT: Agentic-AI Cell-type Annotation Tool
 
+![PyPI](https://img.shields.io/pypi/v/aicat-annotator)
+![Python](https://img.shields.io/pypi/pyversions/aicat-annotator)
+![License](https://img.shields.io/github/license/RavenGan/AICAT)
+
+
 **AICAT** (Agentic-AI Cell-type Annotation Tool) is a computational method for automatic cell type annotation of single-cell RNA-seq data. It leverages the model via OpenAI's API to generate deep and context-aware cell type predictions based on cluster-level expression profiles.
 
 ---
@@ -12,6 +17,11 @@ To install the package in development mode:
 git clone https://github.com/RavenGan/AICAT.git
 cd AICAT
 pip install -e .
+```
+
+To install the package through `pip`:
+```bash
+pip install aicat-annotator==0.0.1
 ```
 
 ## API Key Requirement

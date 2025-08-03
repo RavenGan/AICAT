@@ -1,0 +1,8 @@
+venv/
+test_venv/
+*.h5ad
+__pycache__/
+build/
+dist/
+*.egg-info/
+tests/

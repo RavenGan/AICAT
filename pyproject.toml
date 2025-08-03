@@ -2,8 +2,11 @@
 requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/aicat"]
+
 [project]
-name = "aicat"
+name = "aicat-annotator"
 version = "0.0.1"
 authors = [
   { name="Dailin Gan", email="dailin.raven.gan@gmail.com" },

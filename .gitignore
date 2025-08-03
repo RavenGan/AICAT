@@ -10,6 +10,5 @@ dist/
 build/
 venv/
 test_venv/
-tests/data/
 tests/res/
 __pycache__/

@@ -76,7 +76,7 @@ aicat-subcluster --help
 
 ### Programmatic Usage
 Users can also call `aicat` from python:
-```bash
+```python
 from aicat.main_indepth import indepth_annotation
 # Indepth annotation
 indepth_annotation(api_key, 

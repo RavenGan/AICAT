@@ -45,12 +45,16 @@ def subcluster_annotation(openai_api_key,
         raise KeyError(f"Column '{cluster_col_name}' not found in adata.obs. Available columns: {adata.obs.columns.tolist()}")
     
     # Perform sub-clustering for the chosen cluster
+    # save subclustered data
+    save_path_subcluster = f"{save_path}/Subcluster_{chosen_cluster}.h5ad"
     data_subcluster = sub_clustering(adata, 
                                      cluster_col_name, 
                                      chosen_cluster,
                                      key_added=key_added, # new cell type column name
                                      resolution=resolution)
-    
+    data_subcluster.write(save_path_subcluster)
+
+
     # Save the subclustered data
     save_path_subcluster = f"{save_path}/Subcluster_{chosen_cluster}_top_genes.json"
     subcluster_markers_dict = calculate_diff_genes(data_subcluster,
